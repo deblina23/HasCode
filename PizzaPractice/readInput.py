@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 import itertools
-inputFile = open("input.txt","r")
+inputFile = input("Enter the File:")
+inputFile = open(inputFile,"r")
 firstLine = inputFile.readline()
-firstLine=firstLine.replace(" ","")
-pizza_list =[]
-if len(firstLine) > 0 :
-    firstLine = tuple(firstLine.rstrip())
+pizza_list = []
+if firstLine:
+    pizzaTotal, grpOne, grpTwo, grpThree = firstLine.split(" ")
+    
 for line in itertools.islice(inputFile, 0, int(firstLine[0])):
-    pizza_list.append(line.rstrip())
-  
-print(pizza_list)   
-print(firstLine)
+    pizza_list.append(line.strip())
    
 
