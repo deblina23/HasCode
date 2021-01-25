@@ -7,10 +7,10 @@ def print_input(processInput):
 def read_input():
     lines = []
     while True:
-                line = input()
-                if ("" == line):
-                             break
-                lines.append(line)
+        line = input()
+        if ("" == line):
+            break
+    lines.append(line)
     return lines
 
 def process_input(inputLines):
